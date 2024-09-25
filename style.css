@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./mountains-morning-snow-rock-mountain-landscape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-logo h1{
+    animation: ease color 2s infinite;
+}
+@keyframes color{
+    0%{
+        color: aqua;
+    }
+    50%{
+        color: blue;
+    }
+}
+.container{
+    width:90%;
+    margin: 0 auto;
+}
+.header-logo{
+    padding-top: 30px;
+    color: white
+    
+}
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav ul{
+    display: flex;
+    list-style: none;
+}
+.header-nav ul li{
+    padding: 0 30px;
+    color: white;
+    padding-top: 30px;
+}
+/* /////////////////////////////////////////////////// */
+
+.section-main{
+    text-align: center;
+    /* margin: 0 auto; */
+    padding-top: 200px;
+}
+.sec-h1{
+    font-size: 25px;
+    color: white;
+    
+}
+.sec-p{
+    padding-top: 30px;
+    font-size: 20px;
+    color: white;
+    
+}
+.sec-btn button{
+    padding: 10px  30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.sec-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;    
+}
+.sec-btn i{
+    padding-left: 10px;
+    padding-top: 30px;
+    color: white;
+    font-size: 15px;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+@media screen and (max-width: 693px) {
+    
+    .header-main{
+        flex-direction: column;
+    }
+    .header-nav ul li{
+        flex-direction: column;
+    } 
+    
+}
+@media screen and (max-width: 693px) {
+    .header-nav ul {
+        line-height: 5px;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 303) {
+    .sec-btn button{
+        flex-direction: column;
+        margin-bottom: 20px;
+      
+    }
+    
+    
+}
